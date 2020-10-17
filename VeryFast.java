@@ -9,7 +9,7 @@ public class VeryFast extends SuperHero{
         return Integer.parseInt(fields[3]) > 90;
     }
 
-    public static void attack(SuperHero oHero) {
+    public int attack(SuperHero oHero) {
         int damage = super.attack(oHero);
 
         Random run = new Random();
@@ -23,6 +23,7 @@ public class VeryFast extends SuperHero{
         }
 
 
+        return damage;
     }
 
     public static boolean SubCondition(String[] fields){

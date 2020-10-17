@@ -3,7 +3,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class SuperHero {
+public class SuperHero extends BattleRoyale{
     private String name;
     private int intelligence;
     private int strength;
@@ -159,6 +159,8 @@ public class SuperHero {
                 hero = new DurableMan(fields);
             else if(VeryFast.meetsConditions(fields))
                 hero = new VeryFast(fields);
+            else if (GreenLantern.meetsConditions(fields))
+                hero = new GreenLantern(fields);
             else
                 hero = new SuperHero(fields);
 

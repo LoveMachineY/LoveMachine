@@ -8,7 +8,7 @@ public class OverWeight extends VeryFast{
         return Integer.parseInt(fields[12]) > 150;
     }
 
-    public void attack(SuperHero oHero) {
+    public int attack(SuperHero oHero) {
         int damage = super.attack(oHero);
 
         damage += (this.getSpeed() - this.getSpeed() * 0.1) - oHero.getSpeed();
